@@ -1,4 +1,47 @@
-validate_as_url
-===============
+= validate_as_url Gem for Rails 3.x
 
-Validation of Urls
+Validate http and https urls for valid format with standard model validations.
+
+== Installation
+
+Installing as a gem:
+
+  gem install validate_as_url (recommended)
+
+Or in your Rails 3 Gemfile
+
+  gem 'validate_as_url', :git => 'git://github.com/mdima-it-guru/validate_as_url.git'
+
+For use in Rails project add to your Gemfile following line:
+
+gem 'validate_as_url'
+
+== Usage
+
+# Rails 3
+ class Person < ActiveRecord::Base
+   validate_as_url :website
+ end
+
+=== Options
+
+  :message
+     String. A custom error message (default is: " does not appear to be a valid url")
+  :on
+     Symbol. Specifies when this validation is active (default is :save, other options :create, :update)
+  :allow_nil
+     Boolean. Allow nil values (default is false)
+  :allow_blank
+     Boolean. Allow blank values (default is false)
+
+== Testing
+
+Tested in Ruby 1.9.3
+
+== Resources
+
+* https://github.com/alexdunae/validate_as_url
+
+== Credits
+
+Written by Mitrofanov Dmitry (http://myitguru.info), 2013.
