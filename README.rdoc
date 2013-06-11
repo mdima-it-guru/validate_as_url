@@ -40,7 +40,7 @@ Tested in Ruby 1.9.3
 
 == Resources
 
-* https://github.com/alexdunae/validate_as_url
+* https://github.com/mdima-it-guru/validate_as_url
 
 == Credits
 
