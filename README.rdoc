@@ -14,7 +14,7 @@ Or in your Rails 3 Gemfile
 
 For use in Rails project add to your Gemfile following line:
 
-gem 'validate_as_url'
+  gem 'validate_as_url'
 
 == Usage
 
